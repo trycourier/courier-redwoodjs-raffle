@@ -22,8 +22,8 @@ const HomePage = () => {
         </article>
         <article>
           <CourierProvider
-            userId={process.env.PUBLIC_COURIER_USER}
-            clientKey={process.env.PUBLIC_COURIER_CLIENT_KEY}
+            userId="ba41ca49b43feb58982e686289aa71e7948824cf4e9677177c5cdd73aa903253"
+            clientKey="ZjZmYTE5M2EtMWY1MC00MzQzLWIyYWQtZGM5YmQwMjU0NjI3"
           >
             <Inbox />
             <Toast />

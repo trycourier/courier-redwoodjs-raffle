@@ -37,7 +37,7 @@ export const handler = async (event, _context) => {
   await courier.send({
     message: {
       to: {
-        user_id: process.env.NEXT_PUBLIC_COURIER_USER,
+        user_id: process.env.PUBLIC_COURIER_USER,
       },
       content: {
         body: '{{ name }} has entered the raffle!',

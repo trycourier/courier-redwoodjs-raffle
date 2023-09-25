@@ -21,5 +21,11 @@
   "prisma": {
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@3.6.3",
+  "dependencies": {
+    "@trycourier/courier": "^5.2.0",
+    "@trycourier/react-inbox": "^4.2.5",
+    "@trycourier/react-provider": "^4.2.5",
+    "@trycourier/react-toast": "^4.2.5"
+  }
 }

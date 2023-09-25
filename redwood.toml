@@ -10,8 +10,7 @@
   port = 8910
   apiUrl = "/.netlify/functions"
   includeEnvironmentVariables = [
-    # Add any ENV vars that should be available to the web side to this array
-    # See https://redwoodjs.com/docs/environment-variables#web
+    "PUBLIC_COURIER_USER"
   ]
 [api]
   port = 8911

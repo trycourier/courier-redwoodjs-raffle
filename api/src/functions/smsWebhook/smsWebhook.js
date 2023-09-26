@@ -15,6 +15,8 @@ import { logger } from 'src/lib/logger'
 export const handler = async (event, _context) => {
   logger.info(`${event.httpMethod} ${event.path}: smsWebhook function`)
 
+  // TODO: Lock down this webhook by authenticating the request!
+
   // get values from the POST
   const params = new URLSearchParams(event.body)
   const phoneNumber = params.get('From')
@@ -74,7 +76,7 @@ export const handler = async (event, _context) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      data: `OK`,
+      status: `OK`,
     }),
   }
 }

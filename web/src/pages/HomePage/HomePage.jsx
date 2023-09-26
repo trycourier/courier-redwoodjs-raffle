@@ -6,7 +6,9 @@ const HomePage = () => {
     <>
       <MetaTags title="Home" description="Home page" />
       <h1>Welcome to the Courier Raffle at RedwoodJS Conf 🌲</h1>
-      <p>Choose your own adventure ⚔️</p>
+      <p>
+        Choose your own adventure ⚔️ <b>You MUST be present to win!</b>
+      </p>
       <section style={{ display: 'flex' }}>
         <div
           style={{

@@ -38,33 +38,19 @@ PHONE_NUMBER=zzz
 EMAIL_ADDRESS=xxx
 ```
 
-### `PUBLIC_COURIER_USER`
-
-In your Courier account, create a [new user](https://app.courier.com/users?create-user=true). This will be the user that we send notifications to. Set `PUBLIC_COURIER_USER` to the user ID.
-
-### `PUBLIC_COURIER_CLIENT_KEY`
+Log-in to your Courier account, create a [new user](https://app.courier.com/users?create-user=true). This will be the user that we send notifications to. Set `PUBLIC_COURIER_USER` to the user ID.
 
 Next, go to your [API Keys page](https://app.courier.com/settings/api-keys) and copy the "Client Key (Public)" production key. Set `PUBLIC_COURIER_CLIENT_KEY` to this value.
 
-### `COURIER_AUTH_TOKEN`
-
 On the same API Keys page, under "Production Keys", copy the "Published" key and use it to set `COURIER_AUTH_TOKEN`.
 
-### `COURIER_LIST_ID`
+Set `COURIER_LIST_ID` to a unique ID to represent the list of people who are going to enter your raffle. Something like `my_cool_event`.
 
-Come up with a unique ID to represent the list of people who are going to enter your raffle. Something like `my_cool_event`.
+Set `WEBHOOK_SECRET` to a value that we will use to lock down the webhook requests from Twilio and Postmark. Treat it like a password and make sure it isn't easy to crack.
 
-### `WEBHOOK_SECRET`
+Set `PHONE_NUMBER` to the Twilio-powered phone number that you are using for the raffle.
 
-This is a secret value that we use to lock down the webhook requests from Twilio and Postmark. Treat it like a password and make sure it isn't easy to crack.
-
-### `PHONE_NUMBER`
-
-This is the Twilio-powered phone number that you are using for the raffle.
-
-### `EMAIL_ADDRESS`
-
-This is the email address that you have configured Postmark to recieve.
+Set `EMAIL_ADDRESS` to the email address that you have configured Postmark to recieve email on.
 
 ## Deploying
 

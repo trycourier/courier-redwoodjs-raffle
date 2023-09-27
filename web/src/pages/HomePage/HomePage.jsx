@@ -27,7 +27,7 @@ const HomePage = () => {
               fontWeight: 'bold',
             }}
           >
-            (206) 589-8548
+            {process.env.PHONE_NUMBER}
           </p>
         </div>
         <div
@@ -48,7 +48,7 @@ const HomePage = () => {
               fontWeight: 'bold',
             }}
           >
-            raffle@hacks.courier.com
+            {process.env.EMAIL_ADDRESS}
           </p>
         </div>
       </section>

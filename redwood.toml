@@ -10,7 +10,7 @@
   port = 8910
   apiUrl = "/.netlify/functions"
   includeEnvironmentVariables = [
-    "PUBLIC_COURIER_USER", "PUBLIC_COURIER_CLIENT_KEY",
+    "PUBLIC_COURIER_USER", "PUBLIC_COURIER_CLIENT_KEY", "PHONE_NUMBER", "EMAIL_ADDRESS"
   ]
 [api]
   port = 8911

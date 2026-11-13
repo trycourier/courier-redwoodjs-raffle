@@ -1,3 +1,6 @@
+> [!NOTE]
+> **Archived sample.** This app uses the legacy Courier React packages (`@trycourier/react-inbox`, `@trycourier/react-provider`), which are no longer recommended for new projects. To add a notification inbox to a new React app, follow [Add a notification inbox to a React app](https://www.courier.com/docs/guides/add-an-inbox-to-react).
+
 # Courier RedwoodJS Raffle App
 
 ## Prerequisites
